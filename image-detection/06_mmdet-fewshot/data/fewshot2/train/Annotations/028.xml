@@ -1,0 +1,37 @@
+<annotation>
+	<folder>defect_data</folder>
+	<filename>0171.png</filename>
+	<source>
+		<database>defect detection test</database>
+	</source>
+	<size>
+		<width>600</width>
+		<height>600</height>
+		<depth>3</depth>
+	</size>
+		<segmented>0</segmented>
+	<object>
+		<name>defect</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>434</xmin>
+			<ymin>493</ymin>
+			<xmax>497</xmax>
+			<ymax>498</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>defect</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>519</xmin>
+			<ymin>375</ymin>
+			<xmax>563</xmax>
+			<ymax>383</ymax>
+		</bndbox>
+	</object>
+</annotation>

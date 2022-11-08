@@ -1,0 +1,130 @@
+{
+  "images": [
+    {
+      "height": 600,
+      "width": 600,
+      "id": 0,
+      "file_name": "001.png"
+    },
+    {
+      "height": 600,
+      "width": 600,
+      "id": 1,
+      "file_name": "002.png"
+    },
+    {
+      "height": 600,
+      "width": 600,
+      "id": 2,
+      "file_name": "003.png"
+    },
+    {
+      "height": 600,
+      "width": 600,
+      "id": 3,
+      "file_name": "004.png"
+    },
+    {
+      "height": 600,
+      "width": 600,
+      "id": 4,
+      "file_name": "005.png"
+    },
+    {
+      "height": 600,
+      "width": 600,
+      "id": 5,
+      "file_name": "006.png"
+    },
+    {
+      "height": 600,
+      "width": 600,
+      "id": 6,
+      "file_name": "007.png"
+    },
+    {
+      "height": 600,
+      "width": 600,
+      "id": 7,
+      "file_name": "008.png"
+    },
+    {
+      "height": 600,
+      "width": 600,
+      "id": 8,
+      "file_name": "009.png"
+    },
+    {
+      "height": 600,
+      "width": 600,
+      "id": 9,
+      "file_name": "010.png"
+    },
+    {
+      "height": 600,
+      "width": 600,
+      "id": 10,
+      "file_name": "011.png"
+    },
+    {
+      "height": 600,
+      "width": 600,
+      "id": 11,
+      "file_name": "012.png"
+    },
+    {
+      "height": 600,
+      "width": 600,
+      "id": 12,
+      "file_name": "013.png"
+    },
+    {
+      "height": 600,
+      "width": 600,
+      "id": 13,
+      "file_name": "014.png"
+    },
+    {
+      "height": 600,
+      "width": 600,
+      "id": 14,
+      "file_name": "015.png"
+    },
+    {
+      "height": 600,
+      "width": 600,
+      "id": 15,
+      "file_name": "016.png"
+    },
+    {
+      "height": 600,
+      "width": 600,
+      "id": 16,
+      "file_name": "017.png"
+    },
+    {
+      "height": 600,
+      "width": 600,
+      "id": 17,
+      "file_name": "018.png"
+    },
+    {
+      "height": 600,
+      "width": 600,
+      "id": 18,
+      "file_name": "019.png"
+    },
+    {
+      "height": 600,
+      "width": 600,
+      "id": 19,
+      "file_name": "020.png"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "defect"
+    }
+  ]
+}
