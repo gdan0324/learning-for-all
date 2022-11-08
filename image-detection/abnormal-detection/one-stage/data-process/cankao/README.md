@@ -1,0 +1,3 @@
+
+表面纹理的数据到kaggle上找
+surface-crack-detection

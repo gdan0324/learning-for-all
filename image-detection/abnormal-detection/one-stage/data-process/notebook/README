@@ -1,0 +1,7 @@
+XML解析.ipynb           xml生成json
+bbox图片打标签.ipynb     根据上面生成的json文件去手动给图片打标签
+ConvertXML.ipynb        yolo格式转成xml (后来没用,因为提交结果是txt)
+ConvertTxt.ipynb        xml转成yolo格式txt
+ConvertResult.ipynb     最终提交结果
+Faster-RCNN             主代码文件(运行的时候要先把XML解析(修改bbox相关代码:不需要减一)和bbox标签代码跑出来)
+yolov5                  把放图片的方式、三类分别送进yolo的结果都放上来了
