@@ -1,0 +1,17 @@
+*.idea
+__pycache__
+*.zip
+*.pth
+*.pt
+assets
+*.json
+submit
+weights
+checkpoint
+runs
+*.txt
+*.csv
+data
+*.png
+*.jpg
+*.dot
