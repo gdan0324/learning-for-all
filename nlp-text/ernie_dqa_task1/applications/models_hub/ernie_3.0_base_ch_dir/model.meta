@@ -1,0 +1,5 @@
+{
+"model_type": "base",
+"pretrain_model_version": "3.0",
+"pretrain_model_type": "ernie-ch"
+}
