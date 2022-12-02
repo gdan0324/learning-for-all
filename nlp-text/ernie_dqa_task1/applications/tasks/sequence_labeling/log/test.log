@@ -1,0 +1,353 @@
+
+INFO: 12-02 15:25:59: params.py:43 * 109656 applications/tasks/sequence_labeling/examples/seqlab_ernie_fc_ch_cpu.json
+INFO: 12-02 15:27:34: params.py:43 * 16048 ./examples/seqlab_ernie_fc_ch_cpu.json
+INFO: 12-02 15:27:34: params.py:52 * 16048 {
+    "dataset_reader": {
+        "dev_reader": {
+            "config": {
+                "batch_size": 8,
+                "data_path": "./data/dev_data",
+                "epoch": 1,
+                "need_data_distribute": true,
+                "need_generate_examples": false,
+                "sampling_rate": 1.0,
+                "shuffle": false
+            },
+            "fields": [
+                {
+                    "data_type": "string",
+                    "embedding": null,
+                    "max_seq_len": 512,
+                    "name": "text_a",
+                    "need_convert": true,
+                    "padding_id": 0,
+                    "reader": {
+                        "type": "ErnieTextFieldReader"
+                    },
+                    "tokenizer": {
+                        "params": null,
+                        "split_char": " ",
+                        "type": "FullTokenizer",
+                        "unk_token": "[UNK]"
+                    },
+                    "truncation_type": 0,
+                    "vocab_path": "../../models_hub/ernie_3.0_base_ch_dir/vocab.txt"
+                }
+            ],
+            "name": "dev_reader",
+            "type": "BasicDataSetReader"
+        },
+        "test_reader": {
+            "config": {
+                "batch_size": 8,
+                "data_path": "./data/test_data",
+                "epoch": 1,
+                "need_data_distribute": true,
+                "need_generate_examples": false,
+                "sampling_rate": 1.0,
+                "shuffle": false
+            },
+            "fields": [
+                {
+                    "data_type": "string",
+                    "embedding": null,
+                    "max_seq_len": 512,
+                    "name": "text_a",
+                    "need_convert": true,
+                    "padding_id": 0,
+                    "reader": {
+                        "type": "ErnieTextFieldReader"
+                    },
+                    "tokenizer": {
+                        "params": null,
+                        "split_char": " ",
+                        "type": "FullTokenizer",
+                        "unk_token": "[UNK]"
+                    },
+                    "truncation_type": 0,
+                    "vocab_path": "../../models_hub/ernie_3.0_base_ch_dir/vocab.txt"
+                }
+            ],
+            "name": "test_reader",
+            "type": "BasicDataSetReader"
+        },
+        "train_reader": {
+            "config": {
+                "batch_size": 2,
+                "data_path": "./data/train_data",
+                "epoch": 5,
+                "need_data_distribute": true,
+                "need_generate_examples": false,
+                "sampling_rate": 1.0,
+                "shuffle": true
+            },
+            "fields": [
+                {
+                    "data_type": "string",
+                    "embedding": null,
+                    "max_seq_len": 512,
+                    "name": "text_a",
+                    "need_convert": true,
+                    "padding_id": 0,
+                    "reader": {
+                        "type": "ErnieTextFieldReader"
+                    },
+                    "tokenizer": {
+                        "params": null,
+                        "split_char": " ",
+                        "type": "FullTokenizer",
+                        "unk_token": "[UNK]"
+                    },
+                    "truncation_type": 0,
+                    "vocab_path": "../../models_hub/ernie_3.0_base_ch_dir/vocab.txt"
+                }
+            ],
+            "name": "train_reader",
+            "type": "BasicDataSetReader"
+        }
+    },
+    "model": {
+        "embedding": {
+            "config_path": "../../models_hub/ernie_3.0_base_ch_dir/ernie_config.json"
+        },
+        "is_dygraph": 1,
+        "optimization": {
+            "decr_every_n_nan_or_inf": 2,
+            "decr_ratio": 0.8,
+            "incr_every_n_steps": 100,
+            "incr_ratio": 2.0,
+            "init_loss_scaling": 128,
+            "learning_rate": 2e-05,
+            "use_dynamic_loss_scaling": false,
+            "use_lr_decay": true,
+            "warmup_proportion": 0.1,
+            "warmup_steps": 0,
+            "weight_decay": 0.01
+        },
+        "type": "ErnieFcSeqLabel"
+    },
+    "trainer": {
+        "PADDLE_IS_FLEET": 0,
+        "PADDLE_PLACE_TYPE": "cpu",
+        "eval_step": 4,
+        "extra_param": {
+            "meta": {
+                "job_type": "sequence_labeling"
+            }
+        },
+        "is_eval_dev": 0,
+        "is_eval_test": 1,
+        "load_checkpoint": "",
+        "load_parameters": "",
+        "output_path": "./output/seqlab_ernie_3.0_base_fc_ch",
+        "pre_train_model": [
+            {
+                "name": "ernie_3.0_base_ch",
+                "params_path": "../../models_hub/ernie_3.0_base_ch_dir/params"
+            }
+        ],
+        "save_model_step": 1000,
+        "train_log_step": 2,
+        "type": "CustomTrainer",
+        "use_amp": false
+    }
+}
+WARNING: 12-02 15:27:34: register.py:25 * 16048 Key WordsegTokenizer already in registry tokenizer.
+INFO: 12-02 15:27:35: run_trainer.py:87 * 16048 run trainer.... pid = 67472
+INFO: 12-02 15:27:36: run_trainer.py:54 * 16048 Device count: 1
+INFO: 12-02 15:27:36: run_trainer.py:55 * 16048 Num train examples: 31296
+INFO: 12-02 15:27:36: run_trainer.py:56 * 16048 Max train steps: 78240
+INFO: 12-02 15:27:36: run_trainer.py:57 * 16048 Num warmup steps: 7824
+INFO: 12-02 15:27:36: static_trainer.py:87 * 16048 parser meta ....
+INFO: 12-02 15:27:36: static_trainer.py:514 * 16048 pre_train_model's name = ernie_3.0_base_ch
+INFO: 12-02 15:27:36: static_trainer.py:117 * 16048 init environment on static mode......
+INFO: 12-02 15:27:36: static_trainer.py:234 * 16048 cpu place....
+INFO: 12-02 15:27:36: static_trainer.py:313 * 16048 init_model_net.....
+INFO: 12-02 15:27:43: static_trainer.py:412 * 16048 load_model_params on static mode....
+INFO: 12-02 15:27:43: static_trainer.py:432 * 16048 pre_train_model's name = ernie_3.0_base_ch
+INFO: 12-02 15:27:57: custom_trainer.py:66 * 16048 epoch 0 progress 15/31296
+INFO: 12-02 15:27:57: custom_trainer.py:77 * 16048 phase = training step = 2 time_cost = 13.539387941360474
+INFO: 12-02 15:27:57: custom_trainer.py:78 * 16048 current loss: [66.115616]
+INFO: 12-02 15:28:14: custom_trainer.py:66 * 16048 epoch 0 progress 19/31296
+INFO: 12-02 15:28:14: custom_trainer.py:77 * 16048 phase = training step = 4 time_cost = 16.504966974258423
+INFO: 12-02 15:28:14: custom_trainer.py:78 * 16048 current loss: [47.26846]
+INFO: 12-02 15:28:22: custom_trainer.py:66 * 16048 epoch 0 progress 23/31296
+INFO: 12-02 15:28:22: custom_trainer.py:77 * 16048 phase = training step = 6 time_cost = 8.322926998138428
+INFO: 12-02 15:28:22: custom_trainer.py:78 * 16048 current loss: [67.91954]
+INFO: 12-02 15:28:44: custom_trainer.py:66 * 16048 epoch 0 progress 27/31296
+INFO: 12-02 15:28:44: custom_trainer.py:77 * 16048 phase = training step = 8 time_cost = 22.08891797065735
+INFO: 12-02 15:28:44: custom_trainer.py:78 * 16048 current loss: [54.538185]
+INFO: 12-02 15:29:08: custom_trainer.py:66 * 16048 epoch 0 progress 31/31296
+INFO: 12-02 15:29:08: custom_trainer.py:77 * 16048 phase = training step = 10 time_cost = 23.314133167266846
+INFO: 12-02 15:29:08: custom_trainer.py:78 * 16048 current loss: [19.468365]
+INFO: 12-02 15:29:21: custom_trainer.py:66 * 16048 epoch 0 progress 35/31296
+INFO: 12-02 15:29:21: custom_trainer.py:77 * 16048 phase = training step = 12 time_cost = 12.90091609954834
+INFO: 12-02 15:29:21: custom_trainer.py:78 * 16048 current loss: [25.075695]
+INFO: 12-02 15:29:47: custom_trainer.py:66 * 16048 epoch 0 progress 39/31296
+INFO: 12-02 15:29:47: custom_trainer.py:77 * 16048 phase = training step = 14 time_cost = 26.596246480941772
+INFO: 12-02 15:29:47: custom_trainer.py:78 * 16048 current loss: [39.46508]
+INFO: 12-02 15:30:03: custom_trainer.py:66 * 16048 epoch 0 progress 43/31296
+INFO: 12-02 15:30:03: custom_trainer.py:77 * 16048 phase = training step = 16 time_cost = 16.215906381607056
+INFO: 12-02 15:30:03: custom_trainer.py:78 * 16048 current loss: [49.74048]
+INFO: 12-02 15:30:19: custom_trainer.py:66 * 16048 epoch 0 progress 47/31296
+INFO: 12-02 15:30:19: custom_trainer.py:77 * 16048 phase = training step = 18 time_cost = 15.62976884841919
+INFO: 12-02 15:30:19: custom_trainer.py:78 * 16048 current loss: [65.782166]
+INFO: 12-02 15:30:38: custom_trainer.py:66 * 16048 epoch 0 progress 51/31296
+INFO: 12-02 15:30:38: custom_trainer.py:77 * 16048 phase = training step = 20 time_cost = 19.07453727722168
+INFO: 12-02 15:30:38: custom_trainer.py:78 * 16048 current loss: [17.076115]
+INFO: 12-02 15:30:57: custom_trainer.py:66 * 16048 epoch 0 progress 55/31296
+INFO: 12-02 15:30:57: custom_trainer.py:77 * 16048 phase = training step = 22 time_cost = 19.18061137199402
+INFO: 12-02 15:30:57: custom_trainer.py:78 * 16048 current loss: [65.61181]
+INFO: 12-02 15:36:56: params.py:43 * 122396 ./examples/seqlab_ernie_fc_ch_cpu.json
+INFO: 12-02 15:36:56: params.py:52 * 122396 {
+    "dataset_reader": {
+        "dev_reader": {
+            "config": {
+                "batch_size": 8,
+                "data_path": "./data/dev_data",
+                "epoch": 1,
+                "need_data_distribute": true,
+                "need_generate_examples": false,
+                "sampling_rate": 1.0,
+                "shuffle": false
+            },
+            "fields": [
+                {
+                    "data_type": "string",
+                    "embedding": null,
+                    "max_seq_len": 512,
+                    "name": "text_a",
+                    "need_convert": true,
+                    "padding_id": 0,
+                    "reader": {
+                        "type": "ErnieTextFieldReader"
+                    },
+                    "tokenizer": {
+                        "params": null,
+                        "split_char": " ",
+                        "type": "FullTokenizer",
+                        "unk_token": "[UNK]"
+                    },
+                    "truncation_type": 0,
+                    "vocab_path": "../../models_hub/ernie_3.0_base_ch_dir/vocab.txt"
+                }
+            ],
+            "name": "dev_reader",
+            "type": "BasicDataSetReader"
+        },
+        "test_reader": {
+            "config": {
+                "batch_size": 8,
+                "data_path": "./data/test_data",
+                "epoch": 1,
+                "need_data_distribute": true,
+                "need_generate_examples": false,
+                "sampling_rate": 1.0,
+                "shuffle": false
+            },
+            "fields": [
+                {
+                    "data_type": "string",
+                    "embedding": null,
+                    "max_seq_len": 512,
+                    "name": "text_a",
+                    "need_convert": true,
+                    "padding_id": 0,
+                    "reader": {
+                        "type": "ErnieTextFieldReader"
+                    },
+                    "tokenizer": {
+                        "params": null,
+                        "split_char": " ",
+                        "type": "FullTokenizer",
+                        "unk_token": "[UNK]"
+                    },
+                    "truncation_type": 0,
+                    "vocab_path": "../../models_hub/ernie_3.0_base_ch_dir/vocab.txt"
+                }
+            ],
+            "name": "test_reader",
+            "type": "BasicDataSetReader"
+        },
+        "train_reader": {
+            "config": {
+                "batch_size": 2,
+                "data_path": "./data/train_data",
+                "epoch": 5,
+                "need_data_distribute": true,
+                "need_generate_examples": false,
+                "sampling_rate": 1.0,
+                "shuffle": true
+            },
+            "fields": [
+                {
+                    "data_type": "string",
+                    "embedding": null,
+                    "max_seq_len": 512,
+                    "name": "text_a",
+                    "need_convert": true,
+                    "padding_id": 0,
+                    "reader": {
+                        "type": "ErnieTextFieldReader"
+                    },
+                    "tokenizer": {
+                        "params": null,
+                        "split_char": " ",
+                        "type": "FullTokenizer",
+                        "unk_token": "[UNK]"
+                    },
+                    "truncation_type": 0,
+                    "vocab_path": "../../models_hub/ernie_3.0_base_ch_dir/vocab.txt"
+                }
+            ],
+            "name": "train_reader",
+            "type": "BasicDataSetReader"
+        }
+    },
+    "model": {
+        "embedding": {
+            "config_path": "../../models_hub/ernie_3.0_base_ch_dir/ernie_config.json"
+        },
+        "is_dygraph": 1,
+        "optimization": {
+            "decr_every_n_nan_or_inf": 2,
+            "decr_ratio": 0.8,
+            "incr_every_n_steps": 100,
+            "incr_ratio": 2.0,
+            "init_loss_scaling": 128,
+            "learning_rate": 2e-05,
+            "use_dynamic_loss_scaling": false,
+            "use_lr_decay": true,
+            "warmup_proportion": 0.1,
+            "warmup_steps": 0,
+            "weight_decay": 0.01
+        },
+        "type": "ErnieFcSeqLabel"
+    },
+    "trainer": {
+        "PADDLE_IS_FLEET": 0,
+        "PADDLE_PLACE_TYPE": "cpu",
+        "eval_step": 4,
+        "extra_param": {
+            "meta": {
+                "job_type": "sequence_labeling"
+            }
+        },
+        "is_eval_dev": 0,
+        "is_eval_test": 1,
+        "load_checkpoint": "",
+        "load_parameters": "",
+        "output_path": "./output/seqlab_ernie_3.0_base_fc_ch",
+        "pre_train_model": [
+            {
+                "name": "ernie_3.0_base_ch",
+                "params_path": "../../models_hub/ernie_3.0_base_ch_dir/params"
+            }
+        ],
+        "save_model_step": 1000,
+        "train_log_step": 2,
+        "type": "CustomTrainer",
+        "use_amp": false
+    }
+}
+WARNING: 12-02 15:37:44: register.py:25 * 122396 Key WordsegTokenizer already in registry tokenizer.

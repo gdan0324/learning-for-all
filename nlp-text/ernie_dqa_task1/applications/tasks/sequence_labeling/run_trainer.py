@@ -102,7 +102,8 @@ def run_trainer(param_dict):
 if __name__ == "__main__":
     args = args.build_common_arguments()
     log.init_log("./log/test", level=logging.DEBUG)
-    param_dict = params.from_file(args.param_path)
+    param_dict = params.from_file(r'./examples/seqlab_ernie_fc_ch_cpu.json')
+    # param_dict = params.from_file(args.param_path)
     _params = params.replace_none(param_dict)
 
     # 记得import一下注册的模块

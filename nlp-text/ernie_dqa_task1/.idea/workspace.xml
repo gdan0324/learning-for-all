@@ -2,6 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b45575e9-ed4e-4b2e-9651-485fe121a2ce" name="Changes" comment="提交main">
+      <change afterPath="$PROJECT_DIR$/../Baidu_STI/.idea/Baidu_STI.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/tasks/sequence_labeling/examples/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/tasks/sequence_labeling/examples/seqlab_ernie_fc_ch_cpu.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/learning-for-all.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/learning-for-all.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ernie_dqa_task1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ernie_dqa_task1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/applications/tasks/sequence_labeling/run_trainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/tasks/sequence_labeling/run_trainer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bert/bert.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/bert/bert.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,13 +51,15 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "true",
-    "last_opened_file_path": "E:/save-github/learning-for-all",
+    "last_opened_file_path": "E:/save-github/learning-for-all/nlp-text/ernie_dqa_task1/applications/tasks/sequence_labeling/examples",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\save-github\learning-for-all\nlp-text\ernie_dqa_task1\applications\tasks\sequence_labeling\examples" />
       <recent name="E:\save-github\learning-for-all\nlp-text\ernie_dqa_task1\bert\data" />
       <recent name="E:\save-github\learning-for-all\nlp-text\ernie_dqa_task1" />
     </key>
@@ -57,7 +67,7 @@
       <recent name="E:\save-github\learning-for-all\nlp-text\ernie_dqa_task1\bert" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.compute">
+  <component name="RunManager" selected="Python.run_trainer">
     <configuration name="compute" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ernie_dqa_task1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -102,8 +112,54 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="run_infer" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ernie_dqa_task1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/applications/tasks/sequence_labeling" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/applications/tasks/sequence_labeling/run_infer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run_trainer" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ernie_dqa_task1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/applications/tasks/sequence_labeling" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/applications/tasks/sequence_labeling/run_trainer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.run_trainer" />
+        <item itemvalue="Python.run_infer" />
         <item itemvalue="Python.compute" />
         <item itemvalue="Python.preprocess" />
       </list>
@@ -124,6 +180,8 @@
       <workItem from="1669186677453" duration="4855000" />
       <workItem from="1669250118493" duration="11000" />
       <workItem from="1669430325821" duration="3269000" />
+      <workItem from="1669899511900" duration="2133000" />
+      <workItem from="1669961925314" duration="5591000" />
     </task>
     <task id="LOCAL-00001" summary="提交main">
       <created>1668944813464</created>
@@ -171,11 +229,23 @@
           <line>8</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/applications/tasks/sequence_labeling/run_infer.py</url>
+          <line>102</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/applications/tasks/sequence_labeling/run_trainer.py</url>
+          <line>102</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ernie_dqa_task1$run_infer.coverage" NAME="run_infer Coverage Results" MODIFIED="1669899613641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/applications/tasks/sequence_labeling" />
     <SUITE FILE_PATH="coverage/ernie_dqa_task1$compute.coverage" NAME="compute Coverage Results" MODIFIED="1668943135648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ernie_dqa_task1$run_trainer.coverage" NAME="run_trainer Coverage Results" MODIFIED="1669966572914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/applications/tasks/sequence_labeling" />
     <SUITE FILE_PATH="coverage/ernie_dqa_task1$preprocess.coverage" NAME="preprocess Coverage Results" MODIFIED="1668941214162" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/applications/tasks/sequence_labeling" />
   </component>
 </project>
